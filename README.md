@@ -5,7 +5,8 @@
 - Laravel ^9
 
 ## Installation
-Run `composer require nuboxdevcom/laravel-healthcheck` in the app root
+1) `composer require nuboxdevcom/laravel-healthcheck`
+2) `php artisan migrate`
 
 ## Using the health checks
 You can set your monitoring system to ping the liveness and readiness URLs to get alerted if there are any problems.\

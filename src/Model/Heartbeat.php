@@ -11,5 +11,5 @@ class Heartbeat extends Model
     public const TYPE_SCHEDULE = 1;
     public const TYPE_JOB = 2;
 
-    protected array $fillable = ['type'];
+    protected $fillable = ['type'];
 }
