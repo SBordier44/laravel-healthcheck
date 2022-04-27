@@ -9,9 +9,9 @@ use NBXDC\LaravelHealthCheck\Model\Heartbeat as HeartbeatModel;
 
 class Heartbeat extends Command
 {
-    protected string $signature = 'healthcheck:heartbeat';
+    protected $signature = 'healthcheck:heartbeat';
 
-    protected string $description = 'Update heartbeat timestamp';
+    protected $description = 'Update heartbeat timestamp';
 
     public function handle(): mixed
     {
