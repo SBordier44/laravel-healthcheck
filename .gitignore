@@ -1,0 +1,12 @@
+.idea/
+*.iml
+*.ipr
+*~
+*.bak
+*.gho
+*.ori
+*.orig
+*.tmp
+vendor/
+.phpunit.result.cache
+*.lock
