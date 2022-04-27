@@ -7,6 +7,11 @@
 ## Installation
 1) `composer require nuboxdevcom/laravel-healthcheck`
 2) `php artisan migrate`
+3) Add these lines in src/Console/Kernel.php :
+   ```php
+   $schedule->command('healthcheck:heartbeat')->everyMinute();
+   $schedule->job(Heartbeat::class)->everyMinute();
+   ```
 
 ## Using the health checks
 You can set your monitoring system to ping the liveness and readiness URLs to get alerted if there are any problems.\
