@@ -13,7 +13,7 @@ class Heartbeat extends Command
 
     protected $description = 'Update heartbeat timestamp';
 
-    public function handle(): mixed
+    public function handle(): void
     {
         $heartbeat = HeartbeatModel::firstOrNew([
             'type' => HeartbeatModel::TYPE_SCHEDULE

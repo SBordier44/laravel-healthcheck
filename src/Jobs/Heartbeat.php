@@ -17,7 +17,7 @@ class Heartbeat implements ShouldQueue
 
     public $tries = 1;
 
-    public function handle(): mixed
+    public function handle(): void
     {
         $heartbeat = HeartbeatModel::firstOrNew([
             'type' => HeartbeatModel::TYPE_JOB
