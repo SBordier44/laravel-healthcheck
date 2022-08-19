@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace NBXDC\LaravelHealthCheck\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Date;
 use Illuminate\Support\Facades\DB;
 use NBXDC\LaravelHealthCheck\Model\Heartbeat;
 
-class HealthCheckController extends Controller
+class HealthCheckController extends BaseController
 {
     public function readiness(): Response
     {
