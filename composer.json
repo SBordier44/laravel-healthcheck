@@ -3,7 +3,7 @@
   "description": "Liveness and Readiness Probes in your Laravel application",
   "type": "library",
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "authors": [
     {
       "name": "NuBOX DevCom",

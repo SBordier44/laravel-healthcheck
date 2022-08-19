@@ -27,11 +27,5 @@ class HealthCheckServiceProvider extends ServiceProvider
         }
 
         $this->commands(HeartbeatCommand::class);
-
-        $this->app->booted(function () {
-            $schedule = $this->app->make(Schedule::class);
-            $schedule->job(new HeartbeatJob())->everyMinute();
-            $schedule->command('healthcheck:heartbeat')->everyMinute();
-        });
     }
 }

@@ -11,4 +11,6 @@ Route::group(['prefix' => 'healthcheck'], function () {
     Route::get('/liveness/database', [HealthCheckController::class, 'livenessDatabase'])->name('livenessDatabase');
     Route::get('/liveness/schedule', [HealthCheckController::class, 'livenessSchedule'])->name('livenessSchedule');
     Route::get('/liveness/queue', [HealthCheckController::class, 'livenessQueue'])->name('livenessQueue');
+    Route::get('/liveness/components/{components}', [HealthCheckController::class, 'livenessComponents'])
+        ->name('livenessComponents');
 });
